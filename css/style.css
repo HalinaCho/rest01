@@ -357,6 +357,25 @@ img { max-width: 100%; display: block; }
   border: 1.5px solid var(--primary-35);
 }
 
+/* 다크모드: 라이트 페어 컬러로 전환하여 가독성 확보 */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tag-suite,
+  :root:not([data-theme="light"]) .tag-refractive,
+  :root:not([data-theme="light"]) .tag-region {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--secondary);
+    border-color: var(--secondary-dark);
+  }
+}
+
+[data-theme="dark"] .tag-suite,
+[data-theme="dark"] .tag-refractive,
+[data-theme="dark"] .tag-region {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--secondary);
+  border-color: var(--secondary-dark);
+}
+
 /* ===== PRODUCT SECTION ===== */
 .product-section {
   display: flex;
