@@ -436,11 +436,15 @@ img {
 }
 
 .tag-refractive {
-  background: #e67e22;
+  background: rgba(108, 99, 255, 0.1);
+  color: var(--primary-dark);
+  border: 1.5px solid rgba(108, 99, 255, 0.35);
 }
 
 .tag-region {
-  background: #27ae60;
+  background: rgba(108, 99, 255, 0.1);
+  color: var(--primary-dark);
+  border: 1.5px solid rgba(108, 99, 255, 0.35);
 }
 
 .region-list {
