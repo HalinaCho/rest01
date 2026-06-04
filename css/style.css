@@ -263,6 +263,11 @@ img {
   50% { transform: translateX(-50%) translateY(10px); }
 }
 
+@keyframes heroFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
 /* ===== SECTIONS ===== */
 .section {
   padding: 6rem 0;
