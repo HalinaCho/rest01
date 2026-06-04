@@ -215,7 +215,7 @@ window.addEventListener('scroll', () => {
   const paletteLink   = document.getElementById('palette-css');
   const options       = document.querySelectorAll('.palette-option');
 
-  const saved = localStorage.getItem('palette') || 'purple';
+  const saved = localStorage.getItem('palette') || 'blue';
   applyPalette(saved);
 
   paletteToggle?.addEventListener('click', (e) => {
