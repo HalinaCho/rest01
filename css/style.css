@@ -409,33 +409,6 @@ img {
   color: var(--primary);
 }
 
-.skill-item {
-  margin-bottom: 1.2rem;
-}
-
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.4rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.skill-bar {
-  height: 8px;
-  background: var(--gray2);
-  border-radius: 50px;
-  overflow: hidden;
-}
-
-.skill-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
-  border-radius: 50px;
-  width: 0;
-  transition: width 1.2s ease;
-}
-
 .skill-tags {
   display: flex;
   flex-wrap: wrap;
