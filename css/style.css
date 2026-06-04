@@ -648,6 +648,48 @@ img { max-width: 100%; display: block; }
 
 .form-group textarea { resize: vertical; min-height: 120px; }
 
+/* ===== KAKAO QR ===== */
+.kakao-qr-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.kakao-qr-label {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-on-dark);
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.kakao-qr-label i { color: var(--accent); }
+
+.kakao-qr-box {
+  background: white;
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+}
+
+.kakao-qr-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.kakao-qr-desc {
+  font-size: 0.88rem;
+  color: var(--text-light-on-dark);
+  text-align: center;
+  line-height: 1.7;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background: var(--bg-footer);

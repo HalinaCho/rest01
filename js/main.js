@@ -267,9 +267,3 @@ window.addEventListener('scroll', () => {
   }
 })();
 
-// ===== CONTACT FORM =====
-document.getElementById('contactForm')?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  alert('메시지가 전송되었습니다! (실제 전송 기능은 백엔드 연동이 필요합니다)');
-  e.target.reset();
-});
