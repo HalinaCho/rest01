@@ -208,6 +208,65 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// ===== PALETTE SWITCHER =====
+(function initPalette() {
+  const paletteToggle = document.getElementById('paletteToggle');
+  const palettePanel  = document.getElementById('palettePanel');
+  const paletteLink   = document.getElementById('palette-css');
+  const options       = document.querySelectorAll('.palette-option');
+
+  const saved = localStorage.getItem('palette') || 'purple';
+  applyPalette(saved);
+
+  paletteToggle?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    palettePanel.classList.toggle('open');
+  });
+
+  document.addEventListener('click', () => palettePanel.classList.remove('open'));
+  palettePanel?.addEventListener('click', (e) => e.stopPropagation());
+
+  options.forEach(btn => {
+    btn.addEventListener('click', () => {
+      applyPalette(btn.dataset.palette);
+      palettePanel.classList.remove('open');
+    });
+  });
+
+  function applyPalette(name) {
+    paletteLink.href = `css/palettes/${name}.css`;
+    localStorage.setItem('palette', name);
+    options.forEach(b => b.classList.toggle('active', b.dataset.palette === name));
+  }
+})();
+
+// ===== DARK MODE TOGGLE =====
+(function initDarkMode() {
+  const btn  = document.getElementById('darkmodeBtn');
+  const root = document.documentElement;
+
+  const saved = localStorage.getItem('theme');
+  if (saved) {
+    root.setAttribute('data-theme', saved);
+  }
+  updateIcon();
+
+  btn?.addEventListener('click', () => {
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    const next   = isDark ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateIcon();
+  });
+
+  function updateIcon() {
+    if (!btn) return;
+    const isDark = root.getAttribute('data-theme') === 'dark';
+    btn.textContent = isDark ? '☀️' : '🌙';
+    btn.title = isDark ? '라이트모드 전환' : '다크모드 전환';
+  }
+})();
+
 // ===== CONTACT FORM =====
 document.getElementById('contactForm')?.addEventListener('submit', (e) => {
   e.preventDefault();

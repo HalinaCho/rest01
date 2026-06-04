@@ -1,0 +1,79 @@
+/* ============================================================
+   PALETTE 2 : Dark Navy / Royal Blue
+   ============================================================ */
+
+:root {
+  --primary:        #1e3a5f;
+  --primary-dark:   #122440;
+  --primary-light:  #2e5a9c;
+  --primary-50:     rgba(30, 58, 95, 0.5);
+  --primary-35:     rgba(30, 58, 95, 0.35);
+  --primary-15:     rgba(30, 58, 95, 0.15);
+  --primary-10:     rgba(30, 58, 95, 0.10);
+
+  --secondary:      #60a5fa;
+  --secondary-dark: #3b82f6;
+
+  --accent:         #f5c518;
+  --accent-text:    #1a1a1a;
+
+  --hero-from:      #060c18;
+  --hero-mid:       #0f2040;
+  --hero-to:        #1e3a5f;
+  --hero-glow-1:    rgba(30, 58, 95, 0.35);
+  --hero-glow-2:    rgba(245, 197, 24, 0.12);
+
+  --bg:             #ffffff;
+  --bg-secondary:   #f0f6ff;
+  --bg-card:        #ffffff;
+  --bg-dark:        #0a1428;
+  --bg-footer:      #060c18;
+  --nav-scrolled-bg:rgba(255, 255, 255, 0.96);
+
+  --text:                #0a1428;
+  --text-light:          #4a6080;
+  --text-on-primary:     #ffffff;
+  --text-on-dark:        #e8f0ff;
+  --text-light-on-dark:  rgba(232, 240, 255, 0.72);
+
+  --border:         #dbeafe;
+  --border-strong:  #93c5fd;
+
+  --shadow:         0 10px 30px rgba(30, 58, 95, 0.10);
+  --shadow-hover:   0 20px 40px rgba(30, 58, 95, 0.20);
+
+  --radius:     12px;
+  --transition: 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:              #060c18;
+    --bg-secondary:    #0a1428;
+    --bg-card:         #0f1e38;
+    --bg-dark:         #040810;
+    --bg-footer:       #020408;
+    --nav-scrolled-bg: rgba(15, 30, 56, 0.96);
+    --text:            #e8f0ff;
+    --text-light:      #93b4d8;
+    --border:          #1a2e4a;
+    --border-strong:   #2e4a6e;
+    --shadow:          0 10px 30px rgba(0, 0, 0, 0.55);
+    --shadow-hover:    0 20px 40px rgba(0, 0, 0, 0.70);
+  }
+}
+
+[data-theme="dark"] {
+  --bg:              #060c18;
+  --bg-secondary:    #0a1428;
+  --bg-card:         #0f1e38;
+  --bg-dark:         #040810;
+  --bg-footer:       #020408;
+  --nav-scrolled-bg: rgba(15, 30, 56, 0.96);
+  --text:            #e8f0ff;
+  --text-light:      #93b4d8;
+  --border:          #1a2e4a;
+  --border-strong:   #2e4a6e;
+  --shadow:          0 10px 30px rgba(0, 0, 0, 0.55);
+  --shadow-hover:    0 20px 40px rgba(0, 0, 0, 0.70);
+}

@@ -1,0 +1,79 @@
+/* ============================================================
+   PALETTE 3 : Dark Forest / 연두 (Lime Green)
+   ============================================================ */
+
+:root {
+  --primary:        #14532d;
+  --primary-dark:   #0a3018;
+  --primary-light:  #16a34a;
+  --primary-50:     rgba(20, 83, 45, 0.5);
+  --primary-35:     rgba(20, 83, 45, 0.35);
+  --primary-15:     rgba(20, 83, 45, 0.15);
+  --primary-10:     rgba(20, 83, 45, 0.10);
+
+  --secondary:      #a3e635;
+  --secondary-dark: #84cc16;
+
+  --accent:         #f5c518;
+  --accent-text:    #1a1a1a;
+
+  --hero-from:      #061208;
+  --hero-mid:       #0d2e14;
+  --hero-to:        #14532d;
+  --hero-glow-1:    rgba(20, 83, 45, 0.35);
+  --hero-glow-2:    rgba(245, 197, 24, 0.12);
+
+  --bg:             #ffffff;
+  --bg-secondary:   #f0fdf4;
+  --bg-card:        #ffffff;
+  --bg-dark:        #061208;
+  --bg-footer:      #030a04;
+  --nav-scrolled-bg:rgba(255, 255, 255, 0.96);
+
+  --text:                #061208;
+  --text-light:          #3d6b4a;
+  --text-on-primary:     #ffffff;
+  --text-on-dark:        #e8ffe8;
+  --text-light-on-dark:  rgba(232, 255, 232, 0.72);
+
+  --border:         #bbf7d0;
+  --border-strong:  #86efac;
+
+  --shadow:         0 10px 30px rgba(20, 83, 45, 0.10);
+  --shadow-hover:   0 20px 40px rgba(20, 83, 45, 0.20);
+
+  --radius:     12px;
+  --transition: 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:              #061208;
+    --bg-secondary:    #0d2214;
+    --bg-card:         #0f2a18;
+    --bg-dark:         #030a04;
+    --bg-footer:       #020604;
+    --nav-scrolled-bg: rgba(15, 42, 24, 0.96);
+    --text:            #e8ffe8;
+    --text-light:      #86c896;
+    --border:          #1a3d24;
+    --border-strong:   #2e6e40;
+    --shadow:          0 10px 30px rgba(0, 0, 0, 0.55);
+    --shadow-hover:    0 20px 40px rgba(0, 0, 0, 0.70);
+  }
+}
+
+[data-theme="dark"] {
+  --bg:              #061208;
+  --bg-secondary:    #0d2214;
+  --bg-card:         #0f2a18;
+  --bg-dark:         #030a04;
+  --bg-footer:       #020604;
+  --nav-scrolled-bg: rgba(15, 42, 24, 0.96);
+  --text:            #e8ffe8;
+  --text-light:      #86c896;
+  --border:          #1a3d24;
+  --border-strong:   #2e6e40;
+  --shadow:          0 10px 30px rgba(0, 0, 0, 0.55);
+  --shadow-hover:    0 20px 40px rgba(0, 0, 0, 0.70);
+}

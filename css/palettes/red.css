@@ -1,0 +1,79 @@
+/* ============================================================
+   PALETTE 4 : Dark Crimson / Rose
+   ============================================================ */
+
+:root {
+  --primary:        #7f1d1d;
+  --primary-dark:   #5a1212;
+  --primary-light:  #b91c1c;
+  --primary-50:     rgba(127, 29, 29, 0.5);
+  --primary-35:     rgba(127, 29, 29, 0.35);
+  --primary-15:     rgba(127, 29, 29, 0.15);
+  --primary-10:     rgba(127, 29, 29, 0.10);
+
+  --secondary:      #fca5a5;
+  --secondary-dark: #f87171;
+
+  --accent:         #f5c518;
+  --accent-text:    #1a1a1a;
+
+  --hero-from:      #180408;
+  --hero-mid:       #3d0e0e;
+  --hero-to:        #7f1d1d;
+  --hero-glow-1:    rgba(127, 29, 29, 0.35);
+  --hero-glow-2:    rgba(245, 197, 24, 0.12);
+
+  --bg:             #ffffff;
+  --bg-secondary:   #fff5f5;
+  --bg-card:        #ffffff;
+  --bg-dark:        #180408;
+  --bg-footer:      #0c0204;
+  --nav-scrolled-bg:rgba(255, 255, 255, 0.96);
+
+  --text:                #180408;
+  --text-light:          #7a3535;
+  --text-on-primary:     #ffffff;
+  --text-on-dark:        #ffe8e8;
+  --text-light-on-dark:  rgba(255, 232, 232, 0.72);
+
+  --border:         #fecaca;
+  --border-strong:  #fca5a5;
+
+  --shadow:         0 10px 30px rgba(127, 29, 29, 0.10);
+  --shadow-hover:   0 20px 40px rgba(127, 29, 29, 0.20);
+
+  --radius:     12px;
+  --transition: 0.3s ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg:              #180408;
+    --bg-secondary:    #2a0808;
+    --bg-card:         #300a0a;
+    --bg-dark:         #0c0204;
+    --bg-footer:       #060102;
+    --nav-scrolled-bg: rgba(48, 10, 10, 0.96);
+    --text:            #ffe8e8;
+    --text-light:      #d89090;
+    --border:          #4a1a1a;
+    --border-strong:   #6e2e2e;
+    --shadow:          0 10px 30px rgba(0, 0, 0, 0.55);
+    --shadow-hover:    0 20px 40px rgba(0, 0, 0, 0.70);
+  }
+}
+
+[data-theme="dark"] {
+  --bg:              #180408;
+  --bg-secondary:    #2a0808;
+  --bg-card:         #300a0a;
+  --bg-dark:         #0c0204;
+  --bg-footer:       #060102;
+  --nav-scrolled-bg: rgba(48, 10, 10, 0.96);
+  --text:            #ffe8e8;
+  --text-light:      #d89090;
+  --border:          #4a1a1a;
+  --border-strong:   #6e2e2e;
+  --shadow:          0 10px 30px rgba(0, 0, 0, 0.55);
+  --shadow-hover:    0 20px 40px rgba(0, 0, 0, 0.70);
+}
