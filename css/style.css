@@ -224,6 +224,7 @@ img { max-width: 100%; display: block; }
 
 /* ===== SECTIONS ===== */
 .section { padding: 6rem 0; }
+.section-sm { padding: 3rem 0; }
 .section-gray { background: var(--bg-secondary); }
 .section-dark { background: var(--bg-dark); }
 
