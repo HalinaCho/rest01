@@ -439,6 +439,33 @@ img {
   background: #e67e22;
 }
 
+.tag-region {
+  background: #27ae60;
+}
+
+.region-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.region-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.region-period {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  background: var(--gray2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
 /* ===== PRODUCT SECTION ===== */
 .product-section {
   display: flex;
