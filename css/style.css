@@ -435,12 +435,8 @@ img {
   font-size: 0.75rem;
 }
 
-.tag-refractive {
-  background: rgba(108, 99, 255, 0.1);
-  color: var(--primary-dark);
-  border: 1.5px solid rgba(108, 99, 255, 0.35);
-}
-
+.tag-suite,
+.tag-refractive,
 .tag-region {
   background: rgba(108, 99, 255, 0.1);
   color: var(--primary-dark);
